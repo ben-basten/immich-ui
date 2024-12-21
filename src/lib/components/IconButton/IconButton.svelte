@@ -3,9 +3,13 @@
 	import Icon from '$lib/components/Icon/Icon.svelte';
 	import type { IconButtonProps } from '$lib/types.js';
 
-	const { icon, flipped, flopped, ...buttonProps }: IconButtonProps = $props();
+	type InternalIconButton = IconButtonProps & {
+		title: string;
+	};
+
+	const { icon, title, flipped, flopped, ...buttonProps }: InternalIconButton = $props();
 </script>
 
-<Button icon {...buttonProps}>
-	<Icon {icon} {flipped} {flopped} size="66%"></Icon>
+<Button icon {...buttonProps} aria-label={title} {title}>
+	<Icon {icon} {flipped} {flopped} aria-hidden="true" size="66%"></Icon>
 </Button>

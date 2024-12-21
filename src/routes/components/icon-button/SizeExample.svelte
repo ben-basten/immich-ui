@@ -9,57 +9,57 @@
 	<Stack>
 		<Heading size="tiny">Semi-Round</Heading>
 		<div>
-			<IconButton {icon} size="tiny">Tiny</IconButton>
+			<IconButton {icon} size="tiny" title="Tiny" />
 		</div>
 		<div>
-			<IconButton {icon} size="small">Small</IconButton>
+			<IconButton {icon} size="small" title="Small" />
 		</div>
 		<div>
-			<IconButton {icon} size="medium">Medium</IconButton>
+			<IconButton {icon} size="medium" title="Medium" />
 		</div>
 		<div>
-			<IconButton {icon} size="large">Large</IconButton>
+			<IconButton {icon} size="large" title="Large" />
 		</div>
 		<div>
-			<IconButton {icon} size="giant">Giant</IconButton>
+			<IconButton {icon} size="giant" title="Giant" />
 		</div>
 	</Stack>
 
 	<Stack>
 		<Heading size="tiny">Round</Heading>
 		<div>
-			<IconButton {icon} shape="round" size="tiny">Tiny</IconButton>
+			<IconButton {icon} shape="round" size="tiny" title="Tiny" />
 		</div>
 		<div>
-			<IconButton {icon} shape="round" size="small">Small</IconButton>
+			<IconButton {icon} shape="round" size="small" title="Small" />
 		</div>
 		<div>
-			<IconButton {icon} shape="round" size="medium">Medium</IconButton>
+			<IconButton {icon} shape="round" size="medium" title="Medium" />
 		</div>
 		<div>
-			<IconButton {icon} shape="round" size="large">Large</IconButton>
+			<IconButton {icon} shape="round" size="large" title="Large" />
 		</div>
 		<div>
-			<IconButton {icon} shape="round" size="giant">Giant</IconButton>
+			<IconButton {icon} shape="round" size="giant" title="Giant" />
 		</div>
 	</Stack>
 
 	<Stack>
 		<Heading size="tiny">Rectangle</Heading>
 		<div>
-			<IconButton {icon} shape="rectangle" size="tiny">Tiny</IconButton>
+			<IconButton {icon} shape="rectangle" size="tiny" title="Tiny" />
 		</div>
 		<div>
-			<IconButton {icon} shape="rectangle" size="small">Small</IconButton>
+			<IconButton {icon} shape="rectangle" size="small" title="Small" />
 		</div>
 		<div>
-			<IconButton {icon} shape="rectangle" size="medium">Medium</IconButton>
+			<IconButton {icon} shape="rectangle" size="medium" title="Medium" />
 		</div>
 		<div>
-			<IconButton {icon} shape="rectangle" size="large">Large</IconButton>
+			<IconButton {icon} shape="rectangle" size="large" title="Large" />
 		</div>
 		<div>
-			<IconButton {icon} shape="rectangle" size="giant">Giant</IconButton>
+			<IconButton {icon} shape="rectangle" size="giant" title="Giant" />
 		</div>
 	</Stack>
 </HStack>

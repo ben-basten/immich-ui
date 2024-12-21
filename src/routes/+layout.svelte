@@ -34,6 +34,7 @@
 				variant="ghost"
 				icon={themeIcon}
 				onclick={handleToggleTheme}
+				title="Toggle theme"
 			/>
 		</Navbar>
 	</AppShellHeader>

@@ -4,5 +4,5 @@
 </script>
 
 <HStack wrap>
-	<IconButton icon={mdiMagnify}>Click me!</IconButton>
+	<IconButton icon={mdiMagnify} title="Click me!" />
 </HStack>

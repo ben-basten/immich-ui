@@ -6,10 +6,10 @@
 </script>
 
 <HStack wrap>
-	<IconButton {icon} disabled color="primary">Primary</IconButton>
-	<IconButton {icon} disabled color="secondary">Secondary</IconButton>
-	<IconButton {icon} disabled color="success">Success</IconButton>
-	<IconButton {icon} disabled color="info">Info</IconButton>
-	<IconButton {icon} disabled color="warning">Warning</IconButton>
-	<IconButton {icon} disabled color="danger">Danger</IconButton>
+	<IconButton {icon} disabled color="primary" title="Primary" />
+	<IconButton {icon} disabled color="secondary" title="Secondary" />
+	<IconButton {icon} disabled color="success" title="Success" />
+	<IconButton {icon} disabled color="info" title="Info" />
+	<IconButton {icon} disabled color="warning" title="Warning" />
+	<IconButton {icon} disabled color="danger" title="Danger" />
 </HStack>
