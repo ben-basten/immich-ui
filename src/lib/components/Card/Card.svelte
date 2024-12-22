@@ -3,7 +3,7 @@
 	import IconButton from '$lib/components/IconButton/IconButton.svelte';
 	import { ChildKey } from '$lib/constants.js';
 	import type { Color, Shape } from '$lib/types.js';
-	import { cleanClass } from '$lib/utils.js';
+	import { cleanClass, generateId } from '$lib/utils.js';
 	import { mdiChevronDown } from '@mdi/js';
 	import { type Snippet } from 'svelte';
 	import type { HTMLAttributes } from 'svelte/elements';
@@ -108,6 +108,7 @@
 	const headerChildren = $derived(getChildSnippet(ChildKey.CardHeader));
 	const bodyChildren = $derived(getChildSnippet(ChildKey.CardBody));
 	const footerChildren = $derived(getChildSnippet(ChildKey.CardFooter));
+	const id = `card-${generateId()}`;
 
 	const headerClasses = 'flex flex-col space-y-1.5';
 	const headerContainerClasses = $derived(
@@ -123,9 +124,10 @@
 
 {#snippet header()}
 	{#if expandable}
+		{@const headerId = `header-${id}`}
 		<button type="button" onclick={onToggle} class="w-full">
 			<div class={cleanClass(headerContainerClasses, 'flex items-center justify-between px-4')}>
-				<div class={cleanClass(headerClasses, 'py-4')}>
+				<div class={cleanClass(headerClasses, 'py-4')} id={headerId}>
 					{@render headerChildren?.()}
 				</div>
 				<div>
@@ -139,6 +141,9 @@
 						variant="ghost"
 						shape="round"
 						size="large"
+						aria-expanded={`${expanded}`}
+						aria-controls={id}
+						aria-labelledby={headerId}
 					/>
 				</div>
 			</div>
@@ -176,7 +181,11 @@
 	{/if}
 
 	{#if bodyChildren && expanded}
-		{@render body()}
+		<div {id}>
+			{#if expanded}
+				{@render body()}
+			{/if}
+		</div>
 	{/if}
 
 	{#if footerChildren}

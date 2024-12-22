@@ -34,7 +34,7 @@
 				variant="ghost"
 				icon={themeIcon}
 				onclick={handleToggleTheme}
-				title="Toggle theme"
+				aria-label="Toggle theme"
 			/>
 		</Navbar>
 	</AppShellHeader>

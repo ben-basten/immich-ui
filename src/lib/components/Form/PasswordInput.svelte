@@ -22,8 +22,8 @@
 				class="m-1"
 				icon={isVisible ? mdiEyeOffOutline : mdiEyeOutline}
 				onclick={() => (isVisible = !isVisible)}
-				title={isVisible ? hideLabel : showLabel}
-			></IconButton>
+				aria-label={isVisible ? hideLabel : showLabel}
+			/>
 		{/if}
 	{/snippet}
 </Input>

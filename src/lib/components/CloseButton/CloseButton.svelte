@@ -6,4 +6,4 @@
 	const { size = 'medium', variant = 'ghost' }: CloseButtonProps = $props();
 </script>
 
-<IconButton icon={mdiClose} color="secondary" shape="round" {variant} {size} title="Close" />
+<IconButton icon={mdiClose} color="secondary" shape="round" {variant} {size} aria-label="Close" />

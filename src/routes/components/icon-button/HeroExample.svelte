@@ -6,10 +6,10 @@
 </script>
 
 <HStack wrap>
-	<IconButton {icon} variant="hero" color="primary" title="Primary" />
-	<IconButton {icon} variant="hero" color="secondary" title="Secondary" />
-	<IconButton {icon} variant="hero" color="success" title="Success" />
-	<IconButton {icon} variant="hero" color="info" title="Info" />
-	<IconButton {icon} variant="hero" color="warning" title="Warning" />
-	<IconButton {icon} variant="hero" color="danger" title="Danger" />
+	<IconButton {icon} variant="hero" color="primary" aria-label="Primary" />
+	<IconButton {icon} variant="hero" color="secondary" aria-label="Secondary" />
+	<IconButton {icon} variant="hero" color="success" aria-label="Success" />
+	<IconButton {icon} variant="hero" color="info" aria-label="Info" />
+	<IconButton {icon} variant="hero" color="warning" aria-label="Warning" />
+	<IconButton {icon} variant="hero" color="danger" aria-label="Danger" />
 </HStack>

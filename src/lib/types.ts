@@ -90,3 +90,7 @@ export type PasswordInputProps = BaseInputProps & {
 	hideLabel?: string;
 	isVisible?: boolean;
 };
+
+export type LabelProps =
+	| { 'aria-label': string; 'aria-labelledby'?: never }
+	| { 'aria-label'?: never; 'aria-labelledby': string };
